@@ -739,7 +739,7 @@ div.mesa {
 }
 
 .globe-container {
-  background:url(img/globo.png) top left no-repeat;
+  background:url(globo.png) top left no-repeat;
   border:1px solid transparent;
   -webkit-border-radius: 50px;
   border-radius: 50px;
