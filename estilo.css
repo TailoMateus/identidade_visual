@@ -7,6 +7,7 @@ body {
 .corpo {
 	height: 300px;
 	margin-top: 170px;
+	overflow: hidden;
 	position: relative;
 }
 
@@ -735,4 +736,125 @@ div.mesa {
 .fumaca.second {
   left: 8px;
   top: -46px;
+}
+
+.globe-container {
+  background:url(img/globo.png) top left no-repeat;
+  border:1px solid transparent;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  bottom: 28px;
+  height: 70px;
+  left: 30px;
+  position: absolute;
+  width: 70px;
+  -webkit-animation: rotate 10s infinite linear;
+  -moz-animation: rotate 10s infinite linear;
+  -ms-animation: rotate 10s infinite linear;
+}
+
+.globe-container::after {
+  background-color: #fff;
+  border-radius: 10px;
+  bottom: -22px;
+  content: '';
+  display: inline-block;
+  height: 12px;
+  left: 5px;
+  position: absolute;
+  width: 60px;
+}
+
+.globe-container::before {
+  background-color: #fff;
+  bottom: -22px;
+  content: '';
+  display: inline-block;
+  height: 30px;
+  left: 25px;
+  position: absolute;
+  width: 20px;
+  z-index: -1;
+}
+
+@-webkit-keyframes rotate{
+  0% {
+   background-position:0px 0px;
+  }
+  100% {
+     background-position:-160px 0px;
+  }
+}
+
+@-ms-keyframes rotate{
+   0% {
+   background-position:0px 0px;
+  }
+  100% {
+     background-position:-160px 0px;
+  }
+}
+@-moz-keyframes rotate{
+ 0% {
+   background-position:0px 0px;
+  }
+  100% {
+     background-position:-160px 0px;
+  }
+}
+
+.lampada {
+	background-color: #fff;
+	border-radius: 20px;
+	bottom: 5px;
+	height: 144px;
+	left: 140px;
+	position: absolute;
+	width: 10px;
+}
+
+.lampada::before { 
+	border: 0 solid transparent;
+	border-radius: 24px 0 0 0;
+	border-top: 13px solid #fff;
+	content: "";
+	height: 21px;
+	left: -6px;
+	position: absolute;
+	top: -17px;
+	transform: rotate(-37deg);
+	width: 66px;
+}
+
+.lampada::after {
+  position: absolute;
+  top: -42px;
+  left: -34px;
+  box-sizing: border-box;
+  width: 50px;
+  border-left: 178px solid transparent;
+  border-right: 185px solid transparent;
+  border-bottom: 340px solid #fff;
+  opacity: 0.4;
+  content: "";
+  transform: rotate(-40deg);
+  -webkit-animation: blinkk 4s infinite alternate ease-in-out;
+  animation: blinkk 4s infinite alternate ease-in-out;
+}
+
+@-webkit-keyframes blinkk {
+  0% {
+    border-bottom: 340px solid #fff;
+  }
+  75% {
+    border-bottom: 340px solid #544d4d;
+  }
+}
+@keyframes blinkk {
+  0% {
+    border-bottom: 340px solid #fff;
+  }
+  75% {
+    border-bottom: 340px solid #544d4d;
+  }
 }
