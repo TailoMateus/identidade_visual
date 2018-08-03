@@ -1,7 +1,7 @@
 body {
 	background: #544d4d !important;
 	margin: 0 auto !important;
-	width: 800px;
+	width: 550px;
 }
 
 .corpo {
@@ -639,7 +639,7 @@ div.mesa {
   border-radius: 0 0 10px 10px;
   bottom: 8px;
   height: 33px;
-  left: 54%;
+  left: 76%;
   position: absolute;
   width: 43px;
 }
